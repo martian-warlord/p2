@@ -27,7 +27,7 @@
 <pre>
     
 
-<?php if ($_POST["passwordStyle"] == "Random"){echo "foo";}  ?>
+<?php echo $foo; ?>
 
 
 

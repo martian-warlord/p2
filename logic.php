@@ -5,7 +5,8 @@
 
 $foo = "";
 
-if ($_POST == "Random"){$foo = "foo";}
+
+if ($_POST["passwordStyle"] == "Random"){ $foo = "go!";} 
 
 
 
