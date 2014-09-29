@@ -1,6 +1,15 @@
 <?php 
 
 
+ print_r($_POST); 
+
+$foo = "";
+
+if ($_POST == "Random"){$foo = "foo";}
+
+
+
+
 // MAGIC WORDS - Alagazam, HocusPocus, Abracadabra, Shazam
 
 // MAGIC SUFFIX - Obey, OpenSeseme
@@ -18,3 +27,4 @@
 // COLOR - Red, Blue, Green, Pink, Gold, Purple, Orange, Baby
 
 //ANIMAL - Dog, Cat, Fish, Bird, Panda, Duck, Bunny, Monkey
+
