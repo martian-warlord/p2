@@ -1,25 +1,57 @@
 <?php 
 
 
- print_r($_POST); 
-
 $foo = "";
+$happybucket = "";
+
+$magicWords = [
+    "magic1" => "Alagazam",
+    "magic2" => "HocusPocus",
+    "magic3" => "Shazam",
+    "magic4" => "SimSalaBim",
+    "magic5" => "Abracadabra",
+    "magic6" => "AlagazamAlagazamAlagazam"
+];
+
+$open = [
+ "open1" => "ICommandTheeOpen",
+ "open2" => "OpenSesame"
+];
 
 
-if ($_POST["passwordStyle"] == "Random"){ $foo = "go!";} 
+if ($_POST["passwordStyle"] == "Affirmation"){ $foo = "Your secret password is: " . "no!";} 
+else if ($_POST["passwordStyle"] == "Magic"){ $foo = "Your secret password is: " . "goos!";} 
+else if ($_POST["passwordStyle"] == "Secret"){ $foo = "Your secret password is: " . "doo!";} 
+else if ($_POST["passwordStyle"] == "Random"){ $foo = "Your secret password is: " . "oops!";} 
+
+
+$magicWords = [
+    "magic1" => "Alagazam",
+    "magic2" => "HocusPocus",
+    "magic3" => "Shazam",
+    "magic4" => "SimSalaBim",
+    "magic5" => "Abracadabra",
+    "magic6" => "AlagazamAlagazamAlagazam"
+];
+$rand_keys = array_rand($magicWords, 5);
+echo $magicWords[$rand_keys[4]];
 
 
 
+$affirmations = array("Happy", "Beautiful", "Wonderful", "Lucky", "Loved", "Awesome", "Strong", "Free", "Joyful", "Peaceful", "Successful", "Relaxed", "Confident", "Grounded", "Valuable", "Growing", "Healthy", "Attractive", "Energized", "Healthy");
+        for ($i=0; $i<=3; $i++)
+        {
+            $pickacard = array_rand($affirmations);
+                        //this generates the random number from the array
+            $happybucket .= $affirmations[$pickacard];
+                        //here we will display the exact charachter from the array
+        }
+        echo "Iam". $happybucket; // printing result
 
-// MAGIC WORDS - Alagazam, HocusPocus, Abracadabra, Shazam
-
-// MAGIC SUFFIX - Obey, OpenSeseme
-
-//SUPER MAGIC WORD - AlagazamAlagazamAlagazam
 
 // INTERJECTIONS - Yummy, Gimme, 
 
-//  AFFIRMATION - Lucky, Happy, Loved, Awesome, strength, light, trust, wonderful, compassion, hope, courage, pleasure, light, blessings, beautiful, joy, giggles, grins, happiness, dreams, freedom, perfection, warmth, gratitude, kindness, opportunity, smiles, unity, respect, peace, wellness, success, relaxed, confidence, growing, learning, valuable, healthy, attractive, energy
+
 
 // VERBS - Love, Hate, Crave, See, Want, 
 
