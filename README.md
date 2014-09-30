@@ -11,12 +11,12 @@ P2: KCD Password Generator including description, and buttons for adding symbols
 Screencast TDB
 
 ## Details for teaching team
-
+I played around with loops, if conditionals, arrays, strings, and randomization functions.  
 
 ## Outside code
 * Bootstrap: http://getbootstrap.com/
 * Google Fonts: http://fonts.googleapis.com
 * JQuery: http://jquery.com/
-* Respond https://github.com/scottjehl/Respond
-
+* Respond: https://github.com/scottjehl/Respond
+* CSS Template: http://lynda.com/
 
