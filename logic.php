@@ -6,12 +6,14 @@ $happybucket = "";
 $luckynumber = 1;
 
 
-
-
 $affirmations = array("Happy", "Beautiful", "Wonderful", "Lucky", "Fantastic", 
 		"Loved", "Deliscious", "Awesome", "Strong", "Sexy", "Fierce", "Powerful", "Free", "Joyful", 
 		"Peaceful", "Successful", "Relaxed", "Confident", "Grounded", "Winning", "SuperDuper", "Valuable", 
 		"Growing", "Healthy", "Attractive", "Energized", "Healthy");
+
+$fancytime = array("*", "@", "#", "^");
+
+
         for ($i=0; $i<=1; $i++)
         {
             $pickacard = array_rand($affirmations);                       
@@ -35,15 +37,27 @@ $affirmations = array("Happy", "Beautiful", "Wonderful", "Lucky", "Fantastic",
 
 			$luckynumber = rand(1,10);
 
-			$foo = "Your secret password is: " . $luckynumber; 
+			$whim = array_rand($fancytime);
+			$decor = $fancytime[$whim];
 
 		    $pickacard = array_rand($affirmations);                       
-            $foo .= strtoupper($affirmations[$pickacard]); 
+            $powerwordOne = strtoupper($affirmations[$pickacard]); 
+
+		    $pickacard = array_rand($affirmations);                       
+            $powerwordTwo = strtoupper($affirmations[$pickacard]);
+
+
+
+
+			$foo = "Your secret password is: " . $luckynumber; 
+
+		                          
+            $foo .= implode($decor ,str_split($powerwordOne)); 
 
             $foo .= "and";
 
-		    $pickacard = array_rand($affirmations);                       
-            $foo .= strtoupper($affirmations[$pickacard]); 
+		                          
+            $foo .= implode($decor ,str_split($powerwordTwo)); 
 
 			$foo .= $luckynumber;
 	}}
