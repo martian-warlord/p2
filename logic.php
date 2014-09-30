@@ -19,7 +19,7 @@ $fancytime = array("*", "@", "#", "^");
             $pickacard = array_rand($affirmations);                       
             $happybucket .= $affirmations[$pickacard];                        
         }
-        $foo = "Your secret password is: " . "Iam". $happybucket .  "and" ; 
+        $foo = "Iam". $happybucket .  "and" ; 
 
             $pickacard = array_rand($affirmations);                       
             $foo .= $affirmations[$pickacard]; 
@@ -47,17 +47,9 @@ $fancytime = array("*", "@", "#", "^");
             $powerwordTwo = strtoupper($affirmations[$pickacard]);
 
 
-
-
-			$foo = "Your secret password is: " . $luckynumber; 
-
+			$foo = $luckynumber; 
 		                          
             $foo .= implode($decor ,str_split($powerwordOne)); 
-
-            $foo .= "and";
-
-		                          
-            $foo .= implode($decor ,str_split($powerwordTwo)); 
 
 			$foo .= $luckynumber;
 	}}
