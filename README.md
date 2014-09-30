@@ -11,7 +11,7 @@ P2: KCD Password Generator including description, and buttons for adding symbols
 Screencast TDB
 
 ## Details for teaching team
-I played around with loops, if conditionals, arrays, strings, and randomization functions.  
+I played around with loops, if conditionals, arrays, strings, and randomization functions.  This implementation focuses more on memorability than entropy.  
 
 ## Outside code
 * Bootstrap: http://getbootstrap.com/
