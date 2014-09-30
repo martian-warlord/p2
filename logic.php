@@ -3,7 +3,7 @@
 
 $foo = "";
 $happybucket = "";
-
+$luckynumber = 1;
 
 
 
@@ -31,7 +31,28 @@ $affirmations = array("Happy", "Beautiful", "Wonderful", "Lucky", "Fantastic",
 		else if ( isset($_POST["symbol"]))  {if ($_POST["symbol"]== "true" ) {
 		$foo .= "!";}}
 
+		else if ( isset($_POST["style2"]))  {if ($_POST["style2"]== "true" ) {
+
+			$luckynumber = rand(1,10);
+
+			$foo = "Your secret password is: " . $luckynumber; 
+
+		    $pickacard = array_rand($affirmations);                       
+            $foo .= strtoupper($affirmations[$pickacard]); 
+
+            $foo .= "and";
+
+		    $pickacard = array_rand($affirmations);                       
+            $foo .= strtoupper($affirmations[$pickacard]); 
+
+			$foo .= $luckynumber;
+	}}
+
+
+
+
+
 $_POST["symbol"]= "false";
 $_POST["magicnumber"] = "false";
-
+$_POST["style2"] = "false";
 
