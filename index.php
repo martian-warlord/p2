@@ -13,25 +13,18 @@
 
 <h2>Do you need a random phrase password that is easy to remember?  Look no further!<h2/>
 
+	<?php echo $foo; ?><br>
+
+<form method='POST' action='index.php'>
+<br>PASSWORD OPTIONS<br>
+<input type="checkbox" name="magicnumber" value = "true" >Do you want a randomly generated number added to your password?<br>
+<input type="checkbox" name="symbol" value = "true"  >Do you want a random symbol added to your password?<br>
+<input type='submit' value='Re-Generate Your Password'><br>
+
+
 <p>WARNING!  I am not a security expert.  This password generator is probably not the best choice for your Swiss bank accounts.  However, if you need a password to leave blog comments, perhaps an “easy to remember” phrase password is a reasonable option.</p>
 
 
-	<form method='POST' action='index.php'>
-    Choose a password type<br>
-   <input type="radio" name="passwordStyle" value="Affirmation">Affirmative<br>
-   <input type="radio" name="passwordStyle" value="Magic">Magic<br>
-   <input type="radio" name="passwordStyle" value="Secret">Secret Agent<br>
-   <input type="radio" name="passwordStyle" value="Random">Random <br>
-    <input type='submit' value='Generate Your Password'><br>
-
-<pre>
-    
-
-<?php echo $foo; ?>
-
-
-
-</pre>
 
 </form>
 

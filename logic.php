@@ -3,19 +3,15 @@
 
 $foo = "";
 $happybucket = "";
-$coinflip = 1;
-$who = "";
-$hoodoo = "";
-$juju = "";
 
 
 
 
-if ($_POST["passwordStyle"] == "Affirmation"){ 
+
 $affirmations = array("Happy", "Beautiful", "Wonderful", "Lucky", "Fantastic", 
-	"Loved", "Deliscious", "Awesome", "Strong", "Sexy", "Fierce", "Powerful", "Free", "Joyful", 
-	"Peaceful", "Successful", "Relaxed", "Confident", "Grounded", "Winning", "SuperDuper", "Valuable", 
-	"Growing", "Healthy", "Attractive", "Energized", "Healthy");
+		"Loved", "Deliscious", "Awesome", "Strong", "Sexy", "Fierce", "Powerful", "Free", "Joyful", 
+		"Peaceful", "Successful", "Relaxed", "Confident", "Grounded", "Winning", "SuperDuper", "Valuable", 
+		"Growing", "Healthy", "Attractive", "Energized", "Healthy");
         for ($i=0; $i<=1; $i++)
         {
             $pickacard = array_rand($affirmations);                       
@@ -25,49 +21,17 @@ $affirmations = array("Happy", "Beautiful", "Wonderful", "Lucky", "Fantastic",
 
             $pickacard = array_rand($affirmations);                       
             $foo .= $affirmations[$pickacard]; 
+		
+		if ( isset($_POST["magicnumber"]) &&  isset($_POST ["symbol"])) {if ($_POST["magicnumber"] == "true" && $_POST ["symbol"] == "true") {
+		$foo .= "24-7-365!"; } }
 
-} 
-else if ($_POST["passwordStyle"] == "Magic"){ 
+		else if ( isset($_POST["magicnumber"])) {if ($_POST["magicnumber"] == "true" ) {
+		$foo .= "007"; }}
 
-$authority = array("ByJupiter", "AlmightyIsis", "OMuses");
-$magicWords = array("Alagazam", "HocusPocus","Shazam","SimSalaBim","Abracadabra","AlagazamAlagazamAlagazam");
-$open = array("ICommandTheeOpen","OpenSesame");
+		else if ( isset($_POST["symbol"]))  {if ($_POST["symbol"]== "true" ) {
+		$foo .= "!";}}
 
-$foo = "Your secret password is: ";
+$_POST["symbol"]= "false";
+$_POST["magicnumber"] = "false";
 
-            $who = array_rand($authority);                       
-            $foo .= $authority[$who]; 
-$foo .= "HearMyCall";
-
-            $hoodoo = array_rand($magicWords);                       
-            $foo .= $magicWords[$hoodoo]; 
-
-            $juju = array_rand($open);                       
-            $foo .= $open[$juju]; 
-
-$foo .= "Obey!";
-
-} 
-else if ($_POST["passwordStyle"] == "Secret"){ $foo = "Your secret password is: " . "doo!";} 
-else if ($_POST["passwordStyle"] == "Random"){ $foo = "Your secret password is: " . "oops!";} 
-
-
-
-
-
-
-
-
-
-// INTERJECTIONS - Yummy, Gimme, 
-
-
-
-// VERBS - Love, Hate, Crave, See, Want, 
-
-//FOOD - Beans, Tacos, Rice, Fries, Sushi, Spam, Burgers, Apples, Cheese, DirtyFeet, Feta, Cheddar, Butter, Gouda, Biscuit, Steak, Ham, Bacon, Cookies, Brownies, Liver, Turkey, Beef, Noodles, Bagels, Bread, Beer, Vodka, Rum, Oats, Lard, 
-
-// COLOR - Red, Blue, Green, Pink, Gold, Purple, Orange, Baby
-
-//ANIMAL - Dog, Cat, Fish, Bird, Panda, Duck, Bunny, Monkey
 
