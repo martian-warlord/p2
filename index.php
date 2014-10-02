@@ -3,7 +3,7 @@
 <head>
 <?php require_once('logic.php'); ?>
 
-	<link href='http://fonts.googleapis.com/css?family=Special+Elite|Scada' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Special+Elite%7CScada' rel='stylesheet' type='text/css'>
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
 	<script src="js/respond.js"></script>
@@ -30,7 +30,7 @@
 
 
 
-				<form method='POST' action='index.php'>
+				
 
 
 
@@ -41,7 +41,7 @@ CUSTOMIZE YOUR PASSWORD
 
 				<div class="row">
 				<div  class="col-md-12 col-sm-12 form-group form-inline" > 
-
+<form method='POST' action='index.php'>
 				<div class="checkbox"><label><input type="checkbox" name="magicnumber" value = "true" >Add a number?</label></div>
             	
 				<div class="checkbox"><label><input type="checkbox" name="symbol" value = "true"  >Add a symbol?</label></div>
@@ -51,10 +51,12 @@ CUSTOMIZE YOUR PASSWORD
   				<button type="submit" class="btn btn-default" name="words" value="2">2 Words</button>
 				<button type='submit' class="btn btn-primary">3 Words</button> </div>
 
+</form>
+			
 
-			</form>
+				</div>
 
-				</div></div>
+			</div>
 
 				<section class="row">
 				<section  class="col-md-12 col-sm-12" >
