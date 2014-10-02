@@ -18,5 +18,5 @@ I played around with loops, if conditionals, arrays, strings, and randomization 
 * Google Fonts: http://fonts.googleapis.com
 * JQuery: http://jquery.com/
 * Respond: https://github.com/scottjehl/Respond
-* CSS Template: http://lynda.com/
+* Meyer CSS Reset: http://lynda.com/
 

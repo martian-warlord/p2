@@ -3,7 +3,7 @@
 <head>
 <?php require_once('logic.php'); ?>
 
-	<link href='http://fonts.googleapis.com/css?family=Roboto%7COrbitron:900' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Special+Elite|Scada' rel='stylesheet' type='text/css'>
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
 	<script src="js/respond.js"></script>
@@ -22,24 +22,37 @@
 		<div class="row">
 		<div  class="col-md-12 col-sm-12" >
 
-		<h1>Josh's XKCD Password Generator</h1>
+		<h1>Memorable Password Generator</h1>
 
 		</div></div>
 
 
 
-				<div class="row">
-				<div  class="col-md-12 col-sm-12 form-group form-inline" >
+
 
 				<form method='POST' action='index.php'>
-				<br>PASSWORD OPTIONS<br>
+
+
+
+
+
+CUSTOMIZE YOUR PASSWORD
+
+
+				<div class="row">
+				<div  class="col-md-12 col-sm-12 form-group form-inline" > 
+
 				<div class="checkbox"><label><input type="checkbox" name="magicnumber" value = "true" >Add a number?</label></div>
             	
 				<div class="checkbox"><label><input type="checkbox" name="symbol" value = "true"  >Add a symbol?</label></div>
-            	
-				<div class="checkbox"><label><input type="checkbox" name="style2" value = "true"  > Try a non XKCD password?</label></div>
-            	
-				<button type='submit' class="btn btn-primary">Re-Generate</button></form>
+            	            	
+            	<div class="btn-group">
+            	<button type="submit" class="btn btn-default" name="style2" value="true">1 Word</button>
+  				<button type="submit" class="btn btn-default" name="words" value="2">2 Words</button>
+				<button type='submit' class="btn btn-primary">3 Words</button> </div>
+
+
+			</form>
 
 				</div></div>
 
@@ -58,6 +71,10 @@
 	However, if you need a password to leave blog comments, perhaps an “easy to remember” phrase password is a reasonable option.  XKCD passwords are based on the idea that long passwords based on natural words are harder to guess or 
 	break with brute force than short passwords with random characters. -- Happiness, Love, Joy, Giggles, & Grins, Josh</small>
 	<br>
+
+	<pre>
+    <?php print_r($_POST); ?>
+</pre>
 
 	</section></section>
 
