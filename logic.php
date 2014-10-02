@@ -37,6 +37,24 @@ $fancytime = array("*", "@", "#", "^");
 
 
 
+// adding two word password format here
+
+		if ( isset($_POST["words"])) {if ($_POST["words"] == "2" ) {
+		$pazzwerd = "007"; 
+
+		    $pickacard = array_rand($affirmations);                       
+            $powerwordOne = strtoupper($affirmations[$pickacard]); //all caps
+
+		    $pickacard = array_rand($affirmations);                       
+            $powerwordTwo = strtoupper($affirmations[$pickacard]);
+
+			$pazzwerd = $powerwordOne; 
+		                          
+            $pazzwerd .= "and"; 
+
+			$pazzwerd .= $powerwordTwo;
+
+		}} 
 
 
 // If checkboxes are checked: joke 1, joke 2, or make fancy password design.
@@ -60,8 +78,7 @@ $fancytime = array("*", "@", "#", "^");
 		    $pickacard = array_rand($affirmations);                       
             $powerwordOne = strtoupper($affirmations[$pickacard]); //all caps
 
-		    $pickacard = array_rand($affirmations);                       
-            $powerwordTwo = strtoupper($affirmations[$pickacard]);
+
 
 
 			$pazzwerd = $luckynumber; 

@@ -59,22 +59,20 @@ CUSTOMIZE YOUR PASSWORD
 				<section class="row">
 				<section  class="col-md-12 col-sm-12" >
 
-				Your secret password is: <h3><?php echo $pazzwerd; ?></h3>
+				Your secret password is: <br><br><h3><?php echo $pazzwerd; ?></h3>
 
 				</section></section>
 				
 
 	<section class="row">
-	<section  class="col-md-12 col-sm-12" >
+	<section  class="col-md-6 col-sm-12" >
 
 	<small><br>  WARNING!  I am not a security expert.  This password generator is probably not the best choice for your Swiss bank accounts.  
-	However, if you need a password to leave blog comments, perhaps an “easy to remember” phrase password is a reasonable option.  XKCD passwords are based on the idea that long passwords based on natural words are harder to guess or 
-	break with brute force than short passwords with random characters. -- Happiness, Love, Joy, Giggles, & Grins, Josh</small>
+	However, if you need a password to leave blog comments, perhaps an “easy to remember” phrase password is a reasonable option.  
+	This generator is based on the XKCD approach to password security.  XKCD is the idea that long passwords based on natural words are harder to guess or 
+	break with brute force than short passwords with random characters.  In general, XKCD passwords are easier to remember. -- Happiness, Love, Joy, Giggles, & Grins, Josh</small>
 	<br>
 
-	<pre>
-    <?php print_r($_POST); ?>
-</pre>
 
 	</section></section>
 
